@@ -66,7 +66,7 @@ Installation:
 
 1. Clone the Repository:
 
-git clone https://github.com/AkramOM606/American-Sign-Language-Detection.git
+git clone https://github.com/ChandanNayak01/American-Sign-Language-Detection.git
 cd American-Sign-Language-Detection
 
 2. Install Dependencies:
