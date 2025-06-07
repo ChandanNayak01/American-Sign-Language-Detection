@@ -1,99 +1,99 @@
-Overview
+Overview:
 
 This ASL Detector is a real-time hand sign recognition application powered by computer vision and deep learning. It detects and classifies American Sign Language (ASL) characters using a webcam. The system captures hand landmarks using MediaPipe, processes them with OpenCV, and classifies gestures using a custom-trained keypoint classifier.
 
-Usage
+Usage:
 
 When you run appl.py, the application starts in real-time inference mode by default. You can switch modes using the following keys:
 
-Press n: Inference mode (default)
+• Press n: Inference mode (default)
 
-Press k: Manual data capture mode
+• Press k: Manual data capture mode
 
-Press d: Automatic dataset processing mode
+• Press d: Automatic dataset processing mode
 
-Press c: Clear the current text
+• Press c: Clear the current text
 
-Table of Contents
+Table of Contents:
 
-Features
+1. Features
 
-Requirements
+2. Requirements
 
-Installation
+3. Installation
 
-Model Training
+4. Model Training
 
-Contributing
+5. Contributing
 
-License
+6. License
 
-Features
+Features:
 
-Real-time ASL detection via webcam
+• Real-time ASL detection via webcam
 
-Hand tracking with MediaPipe
+• Hand tracking with MediaPipe
 
-Gesture classification using a custom-trained keypoint classifier
+• Gesture classification using a custom-trained keypoint classifier
 
-Automatic word formation based on stable gesture detection
+• Automatic word formation based on stable gesture detection
 
-Dataset generation and logging for model training
+• Dataset generation and logging for model training
 
-Requirements
+Requirements:
 
-Python 3.x
+• Python 3.x
 
-OpenCV
+• OpenCV
 
-MediaPipe
+• MediaPipe
 
-Pillow
+• Pillow
 
-NumPy
+• NumPy
 
-Pandas
+• Pandas
 
-Seaborn
+• Seaborn
 
-Scikit-learn
+• Scikit-learn
 
-Matplotlib
+• Matplotlib
 
-TensorFlow 2.16.1 (for TFLite conversion compatibility)
+• TensorFlow 2.16.1 (for TFLite conversion compatibility)
 
-Installation
+Installation:
 
-Clone the Repository:
+1. Clone the Repository:
 
 git clone https://github.com/AkramOM606/American-Sign-Language-Detection.git
 cd American-Sign-Language-Detection
 
-Install Dependencies:
+2. Install Dependencies:
 
 pip install -r requirements.txt
 
-Run the Application:
+3. Run the Application:
 
 python appl.py
 
-Model Training
+Model Training:
 
 Data Collection
 
 Manual Data Collection
 
-Press "k" to enter keypoint logging mode.
+• Press "k" to enter keypoint logging mode.
 
-Press any uppercase letter (A-Z) to record hand landmarks.
+• Press any uppercase letter (A-Z) to record hand landmarks.
 
-Data is stored in model/keypoint_classifier/keypoint.csv.
+• Data is stored in model/keypoint_classifier/keypoint.csv.
 
 Automated Data Collection
 
-Press "d" to process a dataset from folders.
+• Press "d" to process a dataset from folders.
 
-Images from model/dataset/dataset 1 are analyzed and keypoints saved.
+• Images from model/dataset/dataset 1 are analyzed and keypoints saved.
 
 Ensure the dataset path is correct in appl.py before running automated mode.
 
@@ -101,22 +101,22 @@ Training
 
 Use the Jupyter notebook keypoint_classification.ipynb:
 
-Update NUM_CLASSES if changing the number of gestures.
+• Update NUM_CLASSES if changing the number of gestures.
 
-Update keypoint_classifier_label.csv accordingly.
+• Update keypoint_classifier_label.csv accordingly.
 
-Execute all cells sequentially to train and export the model.
+• Execute all cells sequentially to train and export the model.
 
-Model Structure
+Model Structure:
 
 Contributing
 
 We welcome contributions to enhance this project! Feel free to:
 
-Fork the repository
+1. Fork the repository
 
-Create a new branch for your improvements
+2. Create a new branch for your improvements
 
-Commit and push your changes
+3. Commit and push your changes
 
-Open a pull request
+4. Open a pull request
